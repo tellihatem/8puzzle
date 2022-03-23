@@ -13,7 +13,7 @@ g = the movement cost to move from the starting point to a given square on the g
 h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path, because all sorts of things can be in the way (walls, water, etc.). There can be many ways to calculate this ‘h’ which are discussed in the later sections.
 For More Information [Here](https://www.geeksforgeeks.org/a-search-algorithm)
 ### Our Solution for the eight puzzle problem:
-1. We get the information about the initial and goal matrix from utilsiateur and make sure the number given is from 1 to 8 and blank space.
+1. We get the information about the initial and goal matrix from the user and make sure the number given is from 1 to 8 and blank space.
 2. Check if a 8 puzzle is solvable by calculating the number of inversions. For More Infromation [Here](https://www.geeksforgeeks.org/check-instance-8-puzzle-solvable/?ref=gcse)
 3. Create the object State for the initial matrix.
 4. Create the object Solution for the initial State.
