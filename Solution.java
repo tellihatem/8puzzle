@@ -85,6 +85,7 @@ public class Solution
 				}
 			}
 		}
+		// test if the given inputs is Solvable
 		int counter1=0,counter2=0;
 		for (i=0;i<rows*columns;i++) {
 			for (j=i+1;j<rows*columns;j++) {
@@ -103,6 +104,7 @@ public class Solution
 			System.out.println("Error: Unsolvable State");
 			return;
 		}
+		// solution start from here
 		State state_intial = new State(intial,0);
 		new Solution(state_intial);
 		for(State states:expanded) {
